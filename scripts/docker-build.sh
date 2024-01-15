@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
+source ./scripts/utils.sh
 
 lint_docker_file() {
   printMessage "$HEART_ICON" "$HEART_ICON" "Starting hadolinting: $1"

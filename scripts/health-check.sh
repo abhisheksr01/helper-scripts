@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+source ./scripts/utils.sh
 
 response=$(curl -s -X GET -H "Header:Value" ${HEALTH_ENDPOINT})
 response_status=$(jq -r '.status' <<<"${response}")
